@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGreen"
+    tools:context=".fragment.AddParkingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:text="Otopark Araç Ekle/Çıkar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"></TextView>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        android:id="@+id/cardView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/addtaxi"
+                android:id="@+id/addCar"></ImageView>
+
+            <ImageView
+                android:layout_marginTop="70dp"
+                android:layout_toRightOf="@id/addCar"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/exittaxi"
+                android:id="@+id/exitCar"></ImageView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ekle"
+                android:textColor="@color/colorGreen"
+                android:textSize="23sp"
+                android:layout_below="@id/addCar"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/textAdd"></TextView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çıkar"
+                android:textColor="@color/colorRed"
+                android:textSize="23sp"
+                android:layout_below="@id/exitCar"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:id="@+id/textExit"></TextView>
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen"
+    tools:context=".fragment.ParkingListFragment">
+
+    <TextView
+        android:id="@+id/textTitlePark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turgut Otopark Sistemi"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"></TextView>
+
+    <TextView
+        android:layout_below="@id/textTitlePark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parkta olan mevcut araçlar"
+        android:id="@+id/textTitle"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen"
+    tools:context=".ExitDetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çıkış Tarihi"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textTitleExit"></TextView>
+
+    <TextView
+        android:layout_below="@id/textTitleExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14 Jan 2001 16.00"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textExitDate"></TextView>
+
+    <TextView
+        android:layout_below="@id/textExitDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Tarihi"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textTitleAdd"></TextView>
+    <TextView
+        android:layout_below="@id/textTitleAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14 Jan 2001 17.00 "
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textAddDate"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Araç Plaka"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/textAddDate"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textTitleBrand"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="68 FK 399"
+        android:id="@+id/textBrandExtra"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textTitleBrand"></TextView>
+
+    <Button
+        android:onClick="addPayment"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_below="@id/textBrandExtra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Ödemeyi Al"
+        android:textColor="@color/colorWhite"></Button>
+
+
+
+</RelativeLayout>

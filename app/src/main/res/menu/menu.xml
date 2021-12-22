@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/parkList"
+        android:icon="@drawable/list"
+        android:title="Parkta Olanlar"></item>
+
+    <item
+        android:id="@+id/addPark"
+        android:icon="@drawable/park"
+        android:title="Araç Ekle/Sil"></item>
+
+
+    <item
+        android:id="@+id/appClose"
+        android:icon="@drawable/cikis"
+        android:title="Çıkış"></item>
+
+
+</menu>

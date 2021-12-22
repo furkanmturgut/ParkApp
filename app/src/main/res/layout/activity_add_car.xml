@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen"
+    tools:context=".AddCarActivity">
+
+    <TextView
+        android:id="@+id/textAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:text="Araç Girişi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"></TextView>
+
+    <ImageView
+        android:id="@+id/imagePark"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/parklogo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textAlert"
+        android:layout_marginTop="40dp"></ImageView>
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/editTextPlate"
+        android:padding="5dp"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:hint="Plakayı giriniz..."
+        android:background="@drawable/editextbackground"
+        android:layout_below="@id/imagePark"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"></EditText>
+
+    <EditText
+        android:gravity="center"
+        android:inputType="text"
+        android:id="@+id/editTextBrand"
+        android:padding="5dp"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:hint="Araç markasını giriniz..."
+        android:background="@drawable/editextbackground"
+        android:layout_below="@id/editTextPlate"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"></EditText>
+
+    <Button
+        android:gravity="center"
+        android:onClick="addDateText"
+        android:id="@+id/buttonDate"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextBrand"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/editextbackground"
+        android:hint="Saati giriniz..."></Button>
+
+    <Button
+        android:onClick="addCar"
+        android:id="@+id/buttonSave"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Ekle"
+        android:layout_below="@id/buttonDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"></Button>
+
+
+
+
+
+
+
+</RelativeLayout>

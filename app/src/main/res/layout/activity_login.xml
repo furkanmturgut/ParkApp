@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen"
+    tools:context=".login.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginText"
+        android:textSize="33sp"
+        android:textColor="@color/colorWhite"
+        android:text="GİRİŞ YAP"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/parklogo"
+        android:layout_below="@id/loginText"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageLogo"></ImageView>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email"
+        android:paddingTop="5dp"
+        android:padding="9dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="12dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextMail"
+        android:textColor="@color/colorBlack"
+        android:hint="Mail giriniz..."
+        android:layout_below="@id/imageLogo"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/editextbackground"
+        android:layout_centerHorizontal="true"></EditText>
+
+    <EditText
+        android:textColor="@color/colorBlack"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/password"
+        android:paddingTop="5dp"
+        android:padding="9dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="12dp"
+        android:background="@drawable/editextbackground"
+        android:layout_below="@id/editTextMail"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Şifrenizi giriniz..."
+        android:id="@+id/editTextPass"
+        android:inputType="textPassword"></EditText>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Giriş Yap"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/editTextPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="toHomeActivity"></Button>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
